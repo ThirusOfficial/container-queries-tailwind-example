@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Container Queries in Tailwind CSS</title>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <div class="grid grid-cols-[1fr_25rem] min-h-screen">
+            <!-- Main Section-->
+            <main class="p-12 @container">
+                <div w3-include-html="./ad.html"></div>
+            </main>
+
+            <!-- Sidebar -->
+            <aside class="border-l p-12 @container">
+                <div w3-include-html="./ad.html"></div>
+            </aside>
+        </div>
+        <script src="js/includeHTML.js"></script>
+        <script>
+            includeHTML();
+        </script>
+    </body>
+</html>
